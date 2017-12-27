@@ -9,4 +9,5 @@ jobs:
 workflows:
   version: 2
   test:
-    - test
+    jobs:
+      - test
