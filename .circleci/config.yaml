@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: circleci/python:3.5
+    steps:
+      - checkout
+      - run ./test.sh
+workflows:
+  version: 2
+  test:
+    - test
