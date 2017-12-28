@@ -1,2 +1,2 @@
-conda install -f requirements.txt
+conda install --file requirements.txt
 pytest tests
