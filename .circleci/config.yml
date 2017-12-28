@@ -2,7 +2,7 @@ version: 2
 jobs:
   test:
     docker:
-      - image: circleci/python:3.5
+      - image: continuumio/miniconda3 
     steps:
       - checkout
       - run: ./test.sh
